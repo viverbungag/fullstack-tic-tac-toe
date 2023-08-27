@@ -25,35 +25,6 @@ body {
   gap: 20px;
 }
 
-.scores {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 80px;
-  gap: 60px;
-}
-
-.scores__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  font-weight: 600;
-}
-
-.scores__o-wins {
-  color: var(--aquamarine);
-}
-
-.scores__x-wins {
-  color: var(--blue);
-}
-
-.scores__draws {
-  color: var(--gray);
-}
-
 .board {
   display: flex;
   flex-direction: column;
