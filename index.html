@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="tic-tac-toe-container">
+      <section class="scores">
+        <div class="scores__item scores__o-wins">
+          <iconify-icon icon="fa6-solid:o" style="font-size: 20px"></iconify-icon>
+          <span>2 wins</span>
+        </div>
+        <div class="scores__item scores__x-wins">
+          <iconify-icon icon="fa6-solid:x" style="font-size: 20px"></iconify-icon>
+          <span>1 win</span>
+        </div>
+        <div class="scores__item scores__draws">
+          <iconify-icon icon="ph:handshake" style="font-size: 20px"></iconify-icon>
+          <span>3 draws</span>
+        </div>
+      </section>
+      <section class="board">
+        <div class="board__row">
+          <div class="board__square"></div>
+          <div class="board__square"></div>
+          <div class="board__square"></div>
+        </div>
+        <div class="board__row">
+          <div class="board__square"></div>
+          <div class="board__square"></div>
+          <div class="board__square"></div>
+        </div>
+        <div class="board__row board__row--last">
+          <div class="board__square"></div>
+          <div class="board__square"></div>
+          <div class="board__square"></div>
+        </div>
+      </section>
+      <section class="player-turn">
+          <div class="player-turn-x player-turn--current">
+            <iconify-icon icon="fa6-solid:x" style="font-size: 20px"></iconify-icon>
+          </div>
+          <div class="player-turn-o">
+            <iconify-icon icon="fa6-solid:o" style="font-size: 20px"></iconify-icon>
+          </div>
+      </section>
+      <section class="controls">
+        <button class="controls__new-game">New Game</button>
+        <button class="controls__reset-score">Reset Score</button>
+      </section>
+    </div>
+  </body>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</html>

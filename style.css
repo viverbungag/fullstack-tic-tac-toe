@@ -1,0 +1,136 @@
+:root {
+  --white: #ffffff;
+  --blue: #3089db;
+  --aquamarine: #43c2d3;
+  --grey: #a7bcbd;
+  --darkerGray: #a3a3a3;
+  --boardHeight: 500px;
+  --boardWidth: 500px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.tic-tac-toe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+
+.scores {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  gap: 60px;
+}
+
+.scores__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-weight: 600;
+}
+
+.scores__o-wins {
+  color: var(--aquamarine);
+}
+
+.scores__x-wins {
+  color: var(--blue);
+}
+
+.scores__draws {
+  color: var(--gray);
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-height: var(--boardHeight);
+  max-width: var(--boardWidth);
+  justify-content: space-evenly;
+}
+
+.board__row {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+
+  border-bottom: 2px solid var(--grey);
+
+  .board__square {
+    border-right: 2px solid var(--grey);
+  }
+
+  .board__square:last-child {
+    border-right: none;
+  }
+}
+
+.board__row--last {
+  border-bottom: none;
+}
+
+.board__square {
+  width: 100%;
+  height: 100%;
+}
+
+.player-turn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid var(--grey);
+  border-radius: 20px;
+  width: 100px;
+  height: 30px;
+}
+
+.player-turn-x {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blue);
+  width: 100%;
+  height: 100%;
+}
+
+.player-turn-o {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--aquamarine);
+  width: 100%;
+  height: 100%;
+}
+
+.player-turn-x.player-turn--current {
+  color: var(--white);
+  background-color: var(--blue);
+  border-radius: 500px;
+  width:150px;
+}
+
+.player-turn-o.player-turn--current {
+  color: var(--white);
+  background-color: var(--blue);
+  border-radius: 500px;
+  width:150px;
+}
+
+.status__player-turn {
+}
